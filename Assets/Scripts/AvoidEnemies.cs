@@ -8,7 +8,7 @@ public class AvoidEnemies : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject);// Pooling
+            collision.gameObject.SetActive(false);
         }
     }
 }

@@ -424,7 +424,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857864264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.75, y: 0, z: 0}
+  m_LocalPosition: {x: -4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -443,10 +443,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f52ce6d6595de45b3822d72c63fe36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangeEnemys: {x: 0, y: 2}
+  rangeEnemies: {x: 0, y: 2}
   rangeBonus: {x: 0, y: 1.5}
   enemyPrefab: {fileID: 2267489836038510252, guid: b147dce5b4f8fb448a0c3dbf71c56987, type: 3}
   bonusPrefab: {fileID: 5404809568424890326, guid: 8cf30199b37a75d449d60d14495f7469, type: 3}
+  amountEnemiesInScene: 5
+  amountBonusInscene: 5
+  listEnemiesPooling: []
+  listBonusPooling: []
 --- !u!1 &1165317116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1027,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 1404828185}
+  amountParticles: 5
+  listParticlePooling: []
+  particle: {fileID: 6997936048989066422, guid: caf5b040e83374744a8cb571b20cc4f2, type: 3}
 --- !u!1 &2044970296
 GameObject:
   m_ObjectHideFlags: 0

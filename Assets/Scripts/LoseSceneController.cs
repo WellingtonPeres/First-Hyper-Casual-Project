@@ -11,7 +11,7 @@ public class LoseSceneController : MonoBehaviour
     private void Start()
     {
         var score = PlayerPrefs.GetInt("score");
-        scoreText.text = score.ToString();
+        scoreText.text = $"Total Score\n {score.ToString()}";
     }
 
     public void RestartGame()
